@@ -8,8 +8,8 @@ body {
     display:flex;
     justify-content: center;
     align-items: center;
-    min height: 100vh;
-    background-color: black;
+    min-height: 100vh;
+    background-color: white;
 }
 
 .box {
@@ -17,15 +17,15 @@ body {
     width:200px;
     height:200px;
     transform-style:preserve-3d;
-    animation:animate 20s liner infinite;
+    animation: animate 20s linear infinite;
 }
 
 @keyframes animate{
     0%{
-        transform:perspective (1000px) rotate Y (0deg);
+        transform: perspective(1000px) rotateY(0deg);
     }
     100%{
-        transform:perspective (1000px) rotate Y (360deg);
+        transform: perspective(1000px) rotateY(360deg);
     }
 }
 
@@ -37,8 +37,8 @@ body {
     height:100%;
     transform-origin:center;
     transform-style:preserve-3d;
-    transform:rotateY(calc(--i)*45deg)) translateZ (400px);
-    -webkit-box-reflect: below 0px linear gradient (transparent,transparent,#0004);
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(400px);
+    -webkit-box-reflect: below 0px linear-gradient(transparent, transparent, #0004);
 }
 
 .box span img{
