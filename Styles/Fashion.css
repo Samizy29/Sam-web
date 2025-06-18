@@ -1,7 +1,7 @@
 
 /* Background image only applies to this area */
 .background-area {
-  background-image: url('../images/downloadfashion company.jpeg'); /* Adjust the path */
+  background-image: url('../images/fashion-bg.jpg'); /* Adjust the path */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
