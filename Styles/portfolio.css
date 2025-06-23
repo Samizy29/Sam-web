@@ -1,0 +1,139 @@
+:root {
+  --bg: #f9f9f9;
+  --text: #1f2937;
+  --accent: #2563eb;
+  --card: #ffffff;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  transition: all 0.3s ease;
+}
+
+body.dark-mode {
+  --bg: #1f2937;
+  --text: #f9f9f9;
+  --card: #374151;
+  --accent: #3b82f6;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.hero {
+  background: var(--accent);
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.toggle-mode {
+  background: none;
+  border: 2px solid white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin: 0.5rem 0;
+}
+
+.hero-content .tagline {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  background: white;
+  color: var(--accent);
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.section {
+  padding: 4rem 2rem;
+}
+
+.projects .project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.projects .project-grid div {
+  background: var(--card);
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.projects .project-grid div:hover {
+  transform: translateY(-5px);
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.skills-list span {
+  background: var(--card);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.contact ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.contact ul li {
+  margin-bottom: 0.5rem;
+}
+
+footer {
+  background: var(--accent);
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-out;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
